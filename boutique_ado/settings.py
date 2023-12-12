@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-_59did=fbu1q)f2l6a#b4^u-1mjbvp2(+jm$o#^u93#dk#y9ty
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['boutique1-ff735c46931b.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['boutique1-ff735c46931b.herokuapp.com', '8000-mehatabpathan-boutique-a-bqcxct0iti.us2.codeanyapp.com']
 
 
 # Application definition
@@ -59,8 +59,9 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'allauth.account.middleware.AccountMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
